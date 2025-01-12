@@ -20,12 +20,12 @@ button {
     font-weight: bold;
     font-size: 18px;
     border-style: none;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 5px 10px;
     height: 30px;
     width: 125px;
+    cursor: pointer;
 }
-
 
 button, .call-to-action-container {
     background-color: #3882F6;
@@ -41,7 +41,7 @@ h1 {
 header {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 50px;
+    padding-bottom: 75px;
 }
 
 .links {
@@ -62,7 +62,9 @@ header {
 .hero {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 50px;
+    padding-bottom: 75px;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .hero-left {
@@ -70,13 +72,14 @@ header {
     flex-direction: column;
     flex: 0 1 480px;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 
 .hero-text {
     text-decoration: none;
     font-size: 18px;
-    color: #E5E7EB;
+    color: #e5e7eb;
 }
 
 #hero-image {
@@ -84,15 +87,56 @@ header {
     width: 550px;
 }
 
-button, .call-to-action-container {
-    background-color: #3882F6;
-}
-
+/* Middle Section Styles*/
 
 h2 {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 200px 100px;
+    flex-wrap: wrap;
+}
+
+.middle-container {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.photo {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.info {
+    max-width: 150px;
+}
+
+/* Quote Section Styles*/
+
+.quote-section { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+    padding: 125px 200px;
+}
+
+.quote {
+    height: 200px;
+    width: 775px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 0 0 775px;
 }
 
 #quote-text {
@@ -102,12 +146,68 @@ h2 {
     color: #1F2937;
 }
 
-
-.photo {
-    height: 200px;
-    width: 200px;
+#quote-author {
+    font-size: 24px;
+    font-weight: 900;
 }
 
-.quote-section { 
-    background-color: #E5E7EB;
+/* Call to action Styles */
+
+.call-to-action-section {
+    padding: 100px 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action-container {
+    padding: 50px 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.call-to-action-left {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.call-to-action-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action-header {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+.call-to-action-subtext {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+#sign-up-two {
+    border-style: solid;
+    border-color: white;
+    padding: 0;
+}
+
+/* Footer Styles */
+
+footer {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    font-size: 18px;
+    color: #e5e7eb;
 }
